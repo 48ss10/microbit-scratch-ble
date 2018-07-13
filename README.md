@@ -27,3 +27,7 @@ Currently the io pin service and the temperature service are not supported by th
 - [bluepy](https://github.com/IanHarvey/bluepy)
 - [scratchpy](https://github.com/pilliq/scratchpy)
 - [micro:bit Bluetooth profile specification](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html)
+
+## License
+- These derivative works are placed in the public domain.
+- There's no warranty.
