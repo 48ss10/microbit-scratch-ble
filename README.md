@@ -16,12 +16,15 @@ Note that the variable `LED-text` needs to be __global__.
 ## MakeCode blocks on micro:bit
 Currently the io pin service and the temperature service are not supported by the above python program.
 
-![Makecode blocks](/makecode.png)
+<img alt="Makecode blocks" src="/makecode.png" width=500px>
 
 ## Tested on the Raspberry Pi
 - Raspberry Pi 1 Model B
 - Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
 - Raspbian Stretch
+
+## Todo
+- Host other services via UART service
 
 ## Other references
 - [bluepy](https://github.com/IanHarvey/bluepy)
