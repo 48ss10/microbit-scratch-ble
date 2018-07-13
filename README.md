@@ -23,7 +23,7 @@ Currently the io pin service and the temperature service are not supported by th
 - Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
 - Raspbian Stretch
 
-# Other references
+## Other references
 - [bluepy](https://github.com/IanHarvey/bluepy)
 - [scratchpy](https://github.com/pilliq/scratchpy)
 - [micro:bit Bluetooth profile specification](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html)
