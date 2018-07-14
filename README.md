@@ -4,17 +4,16 @@ Bridging between micro:bit and Scratch 1.4 via BLE (Bluetooth Low Energy) using 
 Based on the work of Alessio Ciregia (https://github.com/alcir/microbit-ble).
 
 ## Python program to bridge between micro:bit and Scratch via BLE
-$ python [microbit-to-scratch-via-ble.py](/microbit-to-scratch-via-ble.py) XX:XX:XX:XX:XX:XX
-
+$ python [microbit-to-scratch-via-ble.py](/microbit-to-scratch-via-ble.py) XX:XX:XX:XX:XX:XX  
 (XX:XX:XX:XX:XX:XX is the device address of your micro:bit.)
 
 ## Scratch program
-Note that the variable `LED-text` needs to be __global__.
+Note that the variable `LED-text` needs to be __global__ ("For all sprites").
 
 ![Scratch program](/scratch.gif)
 
 ## MakeCode blocks on micro:bit
-Currently the io pin service and the temperature service are not supported by the above python program.
+Currently the io pin service is not supported by the above python program.
 
 <img alt="Makecode blocks" src="/makecode.png" width=500px>
 
@@ -28,7 +27,7 @@ Currently the io pin service and the temperature service are not supported by th
 
 ## Other references
 - [bluepy](https://github.com/IanHarvey/bluepy)
-- [scratchpy](https://github.com/pilliq/scratchpy)
+- [Scratch Python Module](https://www.wyre-it.co.uk/py-scratch/)
 - [micro:bit Bluetooth profile specification](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html)
 
 ## License
