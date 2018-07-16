@@ -3,33 +3,46 @@ Bridging between micro:bit and Scratch 1.4 via BLE (Bluetooth Low Energy) using 
 
 Based on the work of Alessio Ciregia (https://github.com/alcir/microbit-ble).
 
-## Python program to bridge between micro:bit and Scratch via BLE
-$ python [microbit-to-scratch-via-ble.py](/microbit-to-scratch-via-ble.py) XX:XX:XX:XX:XX:XX  
-(XX:XX:XX:XX:XX:XX is the device address of your micro:bit.)
+# Tested on the Raspberry Pi
+- Raspberry Pi 1 Model B
+- Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
+- Raspbian Stretch
 
-## Scratch program
-Note that the variable `LED-text` needs to be __global__ ("For all sprites").
-
-![Scratch program](/scratch.gif)
-
+# Access Bluetooth services on micro:bit
 ## MakeCode blocks on micro:bit
 Currently the io pin service is not supported by the above python program.
 
 <img alt="Makecode blocks" src="/makecode.png" width=500px>
 
-## Tested on the Raspberry Pi
-- Raspberry Pi 1 Model B
-- Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
-- Raspbian Stretch
+## Scratch program (sample)
+Note that the variable `LED-text` needs to be __global__ ("For all sprites").
 
-## Todo
-- Host other services via UART service
+![Scratch program](/scratch.gif)
 
-## Other references
+## Python program
+Run after enabling remote sensors on Scratch.
+
+$ python [microbit-to-scratch-via-ble.py](/microbit-to-scratch-via-ble.py) XX:XX:XX:XX:XX:XX  
+(XX:XX:XX:XX:XX:XX is the device address of your micro:bit.)
+
+# Communicate using UART service
+## MakeCode blocks on micro:bit
+<img alt="Makecode blocks" src="/makecode-uart.png" width=500px>
+
+## Scratch program (sample)
+![Scratch program](/scratch-uart.gif)
+
+## Python program
+Run after enabling remote sensors on Scratch.
+
+$ python [microbit-to-scratch-via-ble-uart.py](/microbit-to-scratch-via-ble-uart.py) XX:XX:XX:XX:XX:XX  
+(XX:XX:XX:XX:XX:XX is the device address of your micro:bit.)
+
+# Other references
 - [bluepy](https://github.com/IanHarvey/bluepy)
 - [Scratch Python Module](https://www.wyre-it.co.uk/py-scratch/)
 - [micro:bit Bluetooth profile specification](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html)
 
-## License
+# License
 - These derivative works are placed in the public domain.
 - There's no warranty.
