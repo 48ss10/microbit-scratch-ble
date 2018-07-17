@@ -3,10 +3,15 @@ Bridging between micro:bit and Scratch 1.4 via BLE (Bluetooth Low Energy) using 
 
 Based on the work of Alessio Ciregia (https://github.com/alcir/microbit-ble).
 
-# Tested on the Raspberry Pi
-- Raspberry Pi 1 Model B
+# Tested on the Raspberry Pi and Lubuntu 18.04
+## Raspberry PI
+- Raspberry Pi 1 Model B with 
 - Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
 - Raspbian Stretch
+## Lubuntu 18.04
+- ThinkPad X40
+- Bluetooth dongle [BT-Micro4](https://www.planex.co.jp/products/bt-micro4/)
+- Lubuntu 18.04
 
 # Access Bluetooth services on micro:bit
 ## MakeCode blocks on micro:bit
@@ -30,6 +35,8 @@ $ python [microbit-to-scratch-via-ble.py](/microbit-to-scratch-via-ble.py) XX:XX
 <img alt="Makecode blocks" src="/makecode-uart.png" width=500px>
 
 ## Scratch program (sample)
+Send heartbeat notificatoins every <3 seconds. In this sample, the light-level notification operates as heartbeats.
+
 ![Scratch program](/scratch-uart.gif)
 
 ## Python program
@@ -37,7 +44,7 @@ Run after enabling remote sensors on Scratch.
 
 $ python [microbit-to-scratch-via-ble-uart.py](/microbit-to-scratch-via-ble-uart.py) XX:XX:XX:XX:XX:XX  
 (XX:XX:XX:XX:XX:XX is the device address of your micro:bit.)
-
+u
 # Other references
 - [bluepy](https://github.com/IanHarvey/bluepy)
 - [Scratch Python Module](https://www.wyre-it.co.uk/py-scratch/)
