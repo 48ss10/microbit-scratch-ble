@@ -15,12 +15,16 @@ Based on the work of Alessio Ciregia (https://github.com/alcir/microbit-ble).
 
 # Access Bluetooth services on micro:bit
 ## MakeCode blocks on micro:bit
-Currently the io pin service is not supported by the below python program.
+
+Note that the accelerometer value notification and the gesture notification are mutually exclusive.
+To get the accelerometer values, you must add the bluetooth accelerometer service block.
+To get the gestures, you must remove the bluetooth accelerometer service block.
 
 <img alt="Makecode blocks" src="/makecode.png" width=500px>
 
 ## Scratch program (sample)
-Note that the variable `LED-text` needs to be __global__ ("For all sprites").
+
+Note that the variable `light-level-period` needs to be __global__ ("For all sprites").
 
 ![Scratch program](/scratch.gif)
 
