@@ -1,0 +1,69 @@
+# https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html
+BUTTON_SERVICE_UUID =        "E95D9882251D470AA062FA1922DFA9A8"
+BUTTON_A_STATE_UUID =        "E95DDA90251D470AA062FA1922DFA9A8"
+BUTTON_B_STATE_UUID =        "E95DDA91251D470AA062FA1922DFA9A8"
+ACCELEROMETER_SERVICE_UUID = "E95D0753251D470AA062FA1922DFA9A8"
+ACCELEROMETER_DATA_UUID =    "E95DCA4B251D470AA062FA1922DFA9A8"
+ACCELEROMETER_PERIOD_UUID =  "E95DFB24251D470AA062FA1922DFA9A8"
+TEMPERATURE_SERVICE_UUID =   "E95D6100251D470AA062FA1922DFA9A8"
+TEMPERATURE_UUID =           "E95D9250251D470AA062FA1922DFA9A8"
+LED_SERVICE_UUID =           "E95DD91D251D470AA062FA1922DFA9A8"
+LED_TEXT_UUID =              "E95D93EE251D470AA062FA1922DFA9A8"
+EVENT_SERVICE_UUID =         "E95D93AF251D470AA062FA1922DFA9A8"
+MICROBIT_EVENT_UUID =        "E95D9775251D470AA062FA1922DFA9A8"
+CLIENT_REQUIREMENTS_UUID =   "E95D23C4251D470AA062FA1922DFA9A8"
+CLIENT_EVENT_UUID =          "E95D5404251D470AA062FA1922DFA9A8"
+
+ID_BUTTON_A           = 1
+ID_BUTTON_B           = 2
+ID_BUTTON_RESET       = 3
+ID_ACCELEROMETER      = 4
+ID_COMPASS            = 5
+ID_DISPLAY            = 6
+ID_IO_P0              = 7           # P0 is the left most pad (ANALOG/DIGITAL)
+ID_IO_P1              = 8           # P1 is the middle pad (ANALOG/DIGITAL)
+ID_IO_P2              = 9           # P2 is the right most pad (ANALOG/DIGITAL)
+ID_IO_P3              = 10          # COL1 (ANALOG/DIGITAL)
+ID_IO_P4              = 11          # BTN_A
+ID_IO_P5              = 12          # COL2 (ANALOG/DIGITAL)
+ID_IO_P6              = 13          # ROW2
+ID_IO_P7              = 14          # ROW1
+ID_IO_P8              = 15          # PIN 18
+ID_IO_P9              = 16          # ROW3
+ID_IO_P10             = 17          # COL3 (ANALOG/DIGITAL)
+ID_IO_P11             = 18          # BTN_B
+ID_IO_P12             = 19          # PIN 20
+ID_IO_P13             = 20          # SCK
+ID_IO_P14             = 21          # MISO
+ID_IO_P15             = 22          # MOSI
+ID_IO_P16             = 23          # PIN 16
+ID_IO_P19             = 24          # SCL
+ID_IO_P20             = 25          # SDA
+ID_BUTTON_AB          = 26          # Button A+B multibutton
+ID_GESTURE            = 27          # Gesture events
+ID_THERMOMETER        = 28
+ID_RADIO              = 29
+ID_RADIO_DATA_READY   = 30
+ID_MULTIBUTTON_ATTACH = 31
+ID_SERIAL             = 32
+
+# ID_BUTTON_{A,B,AB}
+BUTTON_DOWN           = 1
+BUTTON_UP             = 2
+BUTTON_CLICK          = 3
+BUTTON_LONG_CLICK     = 4
+BUTTON_HOLD           = 5
+BUTTON_DOUBLE_CLICK   = 6
+
+# ID_GESTURE
+GESTURE_TILT_UP       = 1
+GESTURE_TILT_DOWN     = 2
+GESTURE_TILT_LEFT     = 3
+GESTURE_TILT_RIGHT    = 4
+GESTURE_FACE_UP       = 5
+GESTURE_FACE_DOWN     = 6
+GESTURE_FREEFALL      = 7
+GESTURE_3G            = 8
+GESTURE_6G            = 9
+GESTURE_8G            = 10
+GESTURE_SHAKE         = 11
